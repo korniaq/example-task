@@ -1,0 +1,15 @@
+{
+  "name": "example-task",
+  "version": "1.0.0",
+  "description": "Example recruitment task",
+  "main": "backend/server.js",
+  "scripts": {
+    "install": "cd frontend && npm i && cd ../backend && npm i",
+    "test": "cd frontend && npm test && cd ../backend && npm test",
+    "devfrontend": "cd frontend && npm start",
+    "devbackend": "cd backend && npm run devmigrate && npm run devserver",
+    "app": "cd frontend && npm run build && cd ../backend && npm run migrate && npm run server"
+  },
+  "author": "Wojciech Korniak",
+  "license": "ISC"
+}

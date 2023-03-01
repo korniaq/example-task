@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "migrate": "dotenv -e .env/.env node migrate.js",
+    "devmigrate": "dotenv -e .env/.env.dev node migrate.js",
+    "server": "dotenv -e .env/.env node server.js",
+    "devserver": "dotenv -e .env/.env.dev node server.js",
+    "test": "dotenv -e .env/.env.test jest --silent"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "dotenv-cli": "^7.0.0",
+    "express": "^4.18.2",
+    "jest": "^29.4.1",
+    "path": "^0.12.7",
+    "sequelize": "^6.28.0",
+    "sqlite3": "^5.1.4",
+    "supertest": "^6.3.3",
+    "umzug": "^3.2.1"
+  }
+}
